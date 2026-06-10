@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Datenschutz — ClickPilot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <style>
+    .legal { max-width: 720px; margin: 0 auto; padding: 64px 0; }
+    .legal h1 { font-size: 32px; margin-bottom: 24px; }
+    .legal h2 { font-size: 20px; margin: 36px 0 12px; }
+    .legal p, .legal li { color: var(--cp-fg-secondary); margin-bottom: 12px; }
+    .legal ul { padding-left: 22px; }
+    .legal .todo { background: var(--cp-risk-med-bg); border: 1px solid var(--cp-border); border-radius: var(--cp-radius-md); padding: 16px 18px; color: var(--cp-fg); font-size: 14px; margin-bottom: 28px; }
+    .legal a.back { font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="wrap legal">
+    <a class="back" href="index.html">← Zurück zur Startseite</a>
+    <h1>Datenschutzerklärung</h1>
+
+    <p class="todo"><strong>Platzhalter / Entwurf.</strong> Diese Seite skizziert, wie
+    ClickPilot mit Daten umgeht, ist aber rechtlich nicht final. Für eine öffentliche
+    Seite ist eine DSGVO-konforme Datenschutzerklärung Pflicht. Passe die Angaben an
+    und lasse sie im Zweifel prüfen. Dies ist keine Rechtsberatung.</p>
+
+    <h2>1. Verantwortlicher</h2>
+    <p>[Name und Kontaktdaten — siehe <a href="impressum.html">Impressum</a>.]</p>
+
+    <h2>2. Die Website (diese Seite)</h2>
+    <p>Diese Landingpage wird über GitHub Pages bereitgestellt. Beim Aufruf können durch
+    den Hosting-Anbieter (GitHub) technisch notwendige Server-Logs (z.&nbsp;B. IP-Adresse,
+    Zeitpunkt, abgerufene Datei) verarbeitet werden. Die Seite lädt Schriftarten von
+    Google Fonts; dabei kann eine Verbindung zu Servern von Google aufgebaut werden.
+    <em>[Hinweis: Für volle DSGVO-Konformität die Schriften lokal einbetten oder einen
+    entsprechenden Hinweis/Opt-in ergänzen.]</em></p>
+    <p>Der Download-Button ruft die GitHub-API auf, um die aktuelle Version zu ermitteln.</p>
+
+    <h2>3. Die ClickPilot-App</h2>
+    <ul>
+      <li><strong>Lokale Verarbeitung:</strong> Die Diagnose-Werkzeuge laufen lokal auf
+      deinem PC. Persönliche Dateien werden nicht gelesen.</li>
+      <li><strong>Maskierung:</strong> Sensible Systemdaten (z.&nbsp;B. Hardware-Adressen)
+      werden maskiert, bevor sie das Gerät verlassen.</li>
+      <li><strong>KI-Anfragen über das Konto:</strong> Bei Nutzung eines kostenlosen
+      Kontos werden die Anfragen über einen Vermittlungsdienst an den KI-Anbieter
+      weitergeleitet. Gesprächsinhalte werden dabei <strong>nicht gespeichert</strong>;
+      erfasst werden lediglich Verbrauchsdaten (Konto-Kennung, Token-Zähler, Zeitstempel)
+      zur Kontingent-Verwaltung.</li>
+      <li><strong>Eigener KI-Schlüssel (BYOK):</strong> Wird ein eigener Schlüssel
+      hinterlegt, gehen die Anfragen direkt an den KI-Anbieter; es gilt dessen
+      Datenschutzerklärung.</li>
+      <li><strong>Lokales Protokoll:</strong> Ausgeführte Aktionen werden lokal auf
+      deinem Gerät protokolliert und verlassen es nicht.</li>
+    </ul>
+
+    <h2>4. Deine Rechte</h2>
+    <p>Du hast nach DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung,
+    Einschränkung der Verarbeitung sowie Datenübertragbarkeit. [Kontakt für die
+    Ausübung dieser Rechte ergänzen.]</p>
+
+    <h2>5. KI-Anbieter</h2>
+    <p>[Anbieter benennen und auf dessen Datenschutzhinweise verlinken.]</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClickPilot — Dein KI-Technik-Assistent für den PC</title>
+  <meta name="description" content="ClickPilot löst PC-Probleme in Alltagssprache. Eine KI wählt sichere Diagnose-Werkzeuge, erklärt die Ergebnisse und repariert auf Wunsch — jeder Eingriff nur mit deiner Bestätigung." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="ClickPilot — Dein KI-Technik-Assistent für den PC" />
+  <meta property="og:description" content="Beschreibe dein PC-Problem in normalen Worten. ClickPilot diagnostiziert und repariert — sicher und mit deiner Bestätigung." />
+  <meta property="og:type" content="website" />
+  <!-- TODO: og:url und og:image setzen, sobald Domain + Vorschaubild stehen -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- ══ Header ════════════════════════════════════════════════════════ -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="ClickPilot Startseite">
+        <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="var(--cp-accent)" />
+          <path d="M10 7.5 22 13c.7.3.6 1.4-.2 1.6l-4.4 1-1.7 4.6c-.3.8-1.4.7-1.6-.1L9 8.6c-.2-.8.4-1.4 1-1.1Z" fill="#fff" />
+        </svg>
+        ClickPilot
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="#funktionen">Funktionen</a>
+        <a class="nav-link" href="#sicherheit">Sicherheit</a>
+        <a class="nav-link" href="#installation">Installation</a>
+        <a class="nav-link" href="#faq">FAQ</a>
+        <a class="btn btn-primary nav-cta" href="#download">Herunterladen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ══ Hero ════════════════════════════════════════════════════════ -->
+    <section class="hero" style="padding-top: 80px;">
+      <div class="wrap">
+        <span class="eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg>
+          Für Windows · Sicherheit zuerst
+        </span>
+        <h1>Dein PC zickt? Sag es einfach in eigenen Worten.</h1>
+        <p class="lede">
+          ClickPilot ist ein KI-Technik-Assistent: Du beschreibst dein Problem in
+          Alltagssprache, die KI wählt die passenden Diagnose-Werkzeuge, erklärt
+          verständlich, was los ist — und repariert auf Wunsch. Jeder Eingriff
+          passiert nur mit deiner ausdrücklichen Bestätigung.
+        </p>
+        <div class="cta-row">
+          <div class="cta-buttons">
+            <a class="btn btn-primary" id="download-btn" href="https://github.com/matpurrota-star/clickpilot-releases/releases/latest">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Für Windows herunterladen
+            </a>
+            <a class="btn btn-secondary" href="#funktionen">Wie es funktioniert</a>
+          </div>
+          <p class="btn-sub" id="download-meta">Windows 10 &amp; 11 (64-Bit) · kostenloser Download</p>
+        </div>
+
+        <!-- App-Vorschau (Platzhalter — echtes Bild ersetzen) -->
+        <div class="preview">
+          <div class="titlebar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          </div>
+          <!-- TODO: <img src="assets/screenshot-hero.png" alt="ClickPilot im Einsatz"> -->
+          <div class="placeholder">
+            <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            <div><strong>Screenshot der App</strong><br><code>assets/screenshot-hero.png</code></div>
+            <span class="muted" style="font-size:13px;">Empfohlen: 1840×1150 px (2× des Fensters), heller Modus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Funktionsweise ══════════════════════════════════════════════ -->
+    <section id="funktionen" class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">So funktioniert's</div>
+          <h2>Vom Problem zur Lösung — in drei Schritten</h2>
+          <p>Keine kryptischen Menüs, keine Kommandozeile. Du redest, ClickPilot handelt.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <h3>Problem beschreiben</h3>
+            <p>„Mein Drucker druckt nicht" oder „Das Internet ist langsam" — ganz normal, wie du es einem Freund erklären würdest.</p>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <h3>KI diagnostiziert</h3>
+            <p>ClickPilot wählt passende Prüf-Werkzeuge, führt sie lokal auf deinem PC aus und erklärt die Ergebnisse in verständlichen Worten.</p>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <h3>Du entscheidest</h3>
+            <p>Schlägt die KI eine Reparatur vor, fragt sie zuerst. Nichts wird verändert, bevor du nicht zugestimmt hast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Features ════════════════════════════════════════════════════ -->
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Funktionen</div>
+          <h2>Ein Werkzeugkasten, der mitdenkt</h2>
+          <p>Über 20 eingebaute Diagnose- und Reparatur-Werkzeuge für die häufigsten Windows-Probleme.</p>
+        </div>
+        <div class="features">
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 4.27 9 5.15M21 14a6.5 6.5 0 0 1-6.5 6.5A6.5 6.5 0 0 1 8 14"/><path d="m3 5 8.5 5 8.5-5M3 5l8.5 5L3 15"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <h3>Versteht Alltagssprache</h3>
+            <p>Kein Fachjargon nötig. Beschreibe das Problem so, wie es sich anfühlt — die KI übersetzt es in die richtigen Prüfungen.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Sicherheit ist eingebaut</h3>
+            <p>Jedes Werkzeug hat eine feste Berechtigungsstufe. Die KI kann keine beliebigen Befehle ausführen — nur geprüfte, registrierte Aktionen.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3>Läuft lokal auf deinem PC</h3>
+            <p>Die Diagnose-Werkzeuge arbeiten direkt auf deinem Rechner. Es wird kein Fernzugriff eingerichtet und nichts ferngesteuert.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div>
+            <h3>Netzwerk, Audio, Drucker &amp; mehr</h3>
+            <p>Von „kein Internet" über „kein Ton" bis „Drucker streikt": ClickPilot prüft Verbindung, Geräte, Speicherplatz und Windows-Updates.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3>Nachvollziehbares Protokoll</h3>
+            <p>Jede ausgeführte Aktion wird lokal protokolliert. Du kannst jederzeit nachsehen, was ClickPilot getan hat.</p>
+          </div>
+          <div class="card">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></div>
+            <h3>Hält sich aktuell</h3>
+            <p>ClickPilot aktualisiert sich automatisch im Hintergrund — du hast immer die neuesten Werkzeuge und Verbesserungen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Sicherheit ══════════════════════════════════════════════════ -->
+    <section id="sicherheit" class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Sicherheit &amp; Vertrauen</div>
+          <h2>Die KI ist das Gehirn — du bist die Bremse</h2>
+          <p>Jede Aktion ist einer von drei Berechtigungsstufen zugeordnet. Lesende Prüfungen laufen sofort; alles, was etwas verändert, fragt zuerst.</p>
+        </div>
+        <div class="perms">
+          <div class="perm perm-low">
+            <h4><span class="tag">Lesend</span></h4>
+            <p>Reine Prüfungen wie Verbindungstest, Speicherplatz oder Geräteliste. Verändern nichts — laufen ohne Rückfrage.</p>
+          </div>
+          <div class="perm perm-med">
+            <h4><span class="tag">Sichere Reparatur</span></h4>
+            <p>Unkritische Eingriffe wie DNS-Cache leeren oder einen Dienst neu starten. Erst nach deiner Bestätigung.</p>
+          </div>
+          <div class="perm perm-high">
+            <h4><span class="tag">Tiefer Eingriff</span></h4>
+            <p>Selten und gewichtiger, z.&nbsp;B. Netzwerkeinstellungen zurücksetzen. Nur mit ausdrücklicher Zustimmung — klar als solche gekennzeichnet.</p>
+          </div>
+        </div>
+        <div class="callout" style="margin-top: 40px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
+          <p><strong>Deine Daten bleiben deine.</strong> ClickPilot liest keine persönlichen Dateien und maskiert sensible Systemdaten (etwa Hardware-Adressen), bevor sie irgendwo hingehen. Für die KI-Antworten kannst du ein kostenloses Konto nutzen — Gesprächsinhalte werden dabei <strong>nicht gespeichert</strong>, nur dein Nutzungskontingent gezählt. Profis können stattdessen ihren eigenen KI-Schlüssel hinterlegen (Anfragen gehen dann direkt zum Anbieter).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Screenshots ═════════════════════════════════════════════════ -->
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Einblicke</div>
+          <h2>So sieht ClickPilot aus</h2>
+          <p>Aufgeräumt und freundlich — gebaut für Menschen, nicht für Technik-Profis.</p>
+        </div>
+        <div class="shots">
+          <!-- TODO: jeweils <img src="assets/..."> statt der Platzhalter einsetzen -->
+          <div class="shot">
+            <div class="placeholder" style="aspect-ratio: 16/10;">
+              <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+              <div><strong>Chat-Ansicht</strong><br><code>assets/screenshot-chat.png</code></div>
+            </div>
+            <div class="cap">Das Gespräch: Problem schildern, Antwort in Klartext erhalten.</div>
+          </div>
+          <div class="shot">
+            <div class="placeholder" style="aspect-ratio: 16/10;">
+              <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+              <div><strong>Bestätigungs-Dialog</strong><br><code>assets/screenshot-permission.png</code></div>
+            </div>
+            <div class="cap">Vor jeder Reparatur: klar erklärt, was passiert — du gibst frei.</div>
+          </div>
+          <div class="shot">
+            <div class="placeholder" style="aspect-ratio: 16/10;">
+              <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              <div><strong>Diagnose-Ergebnis</strong><br><code>assets/screenshot-diagnosis.png</code></div>
+            </div>
+            <div class="cap">Befunde übersichtlich zusammengefasst, mit nächstem Schritt.</div>
+          </div>
+          <div class="shot">
+            <div class="placeholder" style="aspect-ratio: 16/10;">
+              <svg class="ph-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <div><strong>Protokoll</strong><br><code>assets/screenshot-log.png</code></div>
+            </div>
+            <div class="cap">Lückenlos nachvollziehbar: jede Aktion mit Zeitstempel.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Installation ════════════════════════════════════════════════ -->
+    <section id="installation" class="alt">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Installation</div>
+          <h2>In zwei Minuten startklar</h2>
+          <p>ClickPilot installiert sich für deinen Benutzer — ohne Administratorrechte für die Installation selbst.</p>
+        </div>
+        <div class="install-steps">
+          <div class="istep">
+            <div class="n">1</div>
+            <div>
+              <h4>Herunterladen</h4>
+              <p>Lade die aktuelle Version über den Button unten herunter (Datei <span class="mono">ClickPilot_…_x64-setup.exe</span>).</p>
+            </div>
+          </div>
+          <div class="istep">
+            <div class="n">2</div>
+            <div>
+              <h4>Setup starten</h4>
+              <p>Doppelklick auf die heruntergeladene Datei. Folge dem deutschsprachigen Installationsassistenten.</p>
+            </div>
+          </div>
+          <div class="istep">
+            <div class="n">3</div>
+            <div>
+              <h4>Windows-Hinweis bestätigen</h4>
+              <p>Erscheint „Der Computer wurde durch Windows geschützt", klicke auf <kbd>Weitere Informationen</kbd> und dann auf <kbd>Trotzdem ausführen</kbd>. Das ist normal — siehe Hinweis unten.</p>
+            </div>
+          </div>
+          <div class="istep">
+            <div class="n">4</div>
+            <div>
+              <h4>Loslegen</h4>
+              <p>ClickPilot öffnet sich. Lege beim ersten Start ein kostenloses Konto an (oder hinterlege deinen eigenen KI-Schlüssel) und beschreibe dein erstes Problem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p><strong>Warum warnt Windows vor einem „unbekannten Herausgeber"?</strong>
+          ClickPilot ist ein junges Projekt und nutzt noch kein kostenpflichtiges Signatur-Zertifikat. Solange wenige Menschen die App installiert haben, zeigt Windows SmartScreen den Hinweis vorsorglich bei jeder neuen Software an — er ist <strong>kein Zeichen für ein Problem</strong>. Du kannst die App wie oben beschrieben bedenkenlos starten. Mit zunehmender Verbreitung verschwindet der Hinweis.</p>
+        </div>
+
+        <div style="text-align:center; margin-top: 44px;">
+          <a class="btn btn-primary" id="download-btn-2" href="https://github.com/matpurrota-star/clickpilot-releases/releases/latest">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Für Windows herunterladen
+          </a>
+          <p class="btn-sub" id="download">Aktuellste Version · Windows 10 &amp; 11 (64-Bit)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FAQ ═════════════════════════════════════════════════════════ -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Häufige Fragen</div>
+          <h2>Gut zu wissen</h2>
+        </div>
+        <div class="faq">
+          <!-- TODO: Kosten-/Konto-Antwort an dein endgültiges Preismodell anpassen -->
+          <details>
+            <summary>Was kostet ClickPilot?</summary>
+            <p>ClickPilot befindet sich in einer frühen Phase. Du kannst die App herunterladen und mit einem kostenlosen Konto sofort loslegen — ein monatliches Nutzungskontingent ist inbegriffen. Wer mehr braucht oder lieber den eigenen KI-Schlüssel nutzt, kann das jederzeit tun.</p>
+          </details>
+          <details>
+            <summary>Ist das sicher? Kann die KI etwas kaputt machen?</summary>
+            <p>Die KI kann ausschließlich fest registrierte Werkzeuge mit klarer Berechtigungsstufe verwenden — keine beliebigen Systembefehle. Lesende Prüfungen verändern nichts. Alles, was eingreift, braucht zuerst deine ausdrückliche Zustimmung über einen Dialog. Diese Bremse ist technisch erzwungen, nicht nur eine Bitte an die KI.</p>
+          </details>
+          <details>
+            <summary>Welche Windows-Version brauche ich?</summary>
+            <p>ClickPilot läuft auf Windows 10 und Windows 11 (jeweils 64-Bit). Eine Internetverbindung wird für die KI-Antworten benötigt.</p>
+          </details>
+          <details>
+            <summary>Was passiert mit meinen Daten?</summary>
+            <p>Die Diagnose läuft lokal auf deinem PC. Persönliche Dateien werden nicht gelesen, sensible Systemdaten (wie Hardware-Adressen) werden maskiert. Nutzt du das kostenlose Konto, laufen die KI-Anfragen über unseren Vermittlungsdienst zum KI-Anbieter — die Gesprächsinhalte werden dabei <strong>nicht gespeichert</strong>, lediglich dein Nutzungskontingent wird gezählt. Mit eigenem KI-Schlüssel gehen die Anfragen direkt zum Anbieter.</p>
+          </details>
+          <details>
+            <summary>Brauche ich einen eigenen KI-Schlüssel?</summary>
+            <p>Nein. Ein kostenloses Konto genügt für den Einstieg. Profis, die bereits einen Anthropic-API-Schlüssel besitzen, können diesen alternativ hinterlegen.</p>
+          </details>
+          <details>
+            <summary>Wie deinstalliere ich ClickPilot wieder?</summary>
+            <p>Wie jedes Windows-Programm: über „Einstellungen → Apps → Installierte Apps → ClickPilot → Deinstallieren". Es bleiben keine Systemänderungen zurück.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Final CTA ═══════════════════════════════════════════════════ -->
+    <section class="alt final-cta">
+      <div class="wrap">
+        <h2>Bereit, dein PC-Problem loszuwerden?</h2>
+        <p>Lade ClickPilot herunter und beschreibe in einem Satz, was nicht stimmt. Den Rest übernimmt die KI — Schritt für Schritt, mit dir an der Bremse.</p>
+        <a class="btn btn-primary" href="https://github.com/matpurrota-star/clickpilot-releases/releases/latest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Jetzt herunterladen
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ Footer ════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="var(--cp-accent)" />
+              <path d="M10 7.5 22 13c.7.3.6 1.4-.2 1.6l-4.4 1-1.7 4.6c-.3.8-1.4.7-1.6-.1L9 8.6c-.2-.8.4-1.4 1-1.1Z" fill="#fff" />
+            </svg>
+            ClickPilot
+          </a>
+          <p>Der KI-Technik-Assistent, der PC-Probleme in Alltagssprache löst — sicher, lokal und mit dir an der Bremse.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Produkt</h5>
+            <a href="#funktionen">Funktionen</a>
+            <a href="#sicherheit">Sicherheit</a>
+            <a href="#installation">Installation</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h5>Download</h5>
+            <a href="https://github.com/matpurrota-star/clickpilot-releases/releases/latest">Aktuelle Version</a>
+            <a href="https://github.com/matpurrota-star/clickpilot-releases/releases">Alle Versionen</a>
+          </div>
+          <div class="footer-col">
+            <h5>Rechtliches</h5>
+            <!-- TODO (Deutschland): Impressum + Datenschutzerklärung sind für öffentliche Seiten Pflicht. Stubs liegen bei. -->
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ClickPilot</span>
+        <span>Gebaut mit Tauri · für Windows</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Download-Button auf die exakte Installer-Datei des neuesten Releases zeigen.
+    // Fällt still auf die Release-Übersichtsseite zurück (Standard-href), falls
+    // die GitHub-API nicht erreichbar ist (z. B. Rate-Limit).
+    (function () {
+      var FEED = 'matpurrota-star/clickpilot-releases';
+      fetch('https://api.github.com/repos/' + FEED + '/releases/latest', {
+        headers: { 'Accept': 'application/vnd.github+json' }
+      })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function (rel) {
+          var exe = (rel.assets || []).find(function (a) {
+            return /x64-setup\.exe$/i.test(a.name);
+          });
+          if (exe) {
+            ['download-btn', 'download-btn-2'].forEach(function (id) {
+              var el = document.getElementById(id);
+              if (el) el.setAttribute('href', exe.browser_download_url);
+            });
+          }
+          var meta = document.getElementById('download-meta');
+          if (meta && rel.tag_name) {
+            meta.textContent = 'Version ' + rel.tag_name.replace(/^v/, '') +
+              ' · Windows 10 & 11 (64-Bit) · kostenloser Download';
+          }
+        })
+        .catch(function () { /* Fallback: Standard-href bleibt bestehen */ });
+    })();
+  </script>
+</body>
+</html>
