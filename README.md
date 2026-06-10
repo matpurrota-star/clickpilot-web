@@ -37,11 +37,10 @@ ersetze die Platzhalter-Blöcke in `index.html` (Suche nach `TODO`):
 | Galerie | `assets/screenshot-diagnosis.png` | Diagnose-Ergebnis-Karte |
 | Galerie | `assets/screenshot-log.png` | Protokoll-Ansicht |
 
-### 2. Rechtstexte ausfüllen (Deutschland)
-`impressum.html` und `datenschutz.html` sind **Platzhalter**. Für eine öffentlich
-erreichbare Seite sind Impressum (§ 5 DDG) und Datenschutzerklärung (DSGVO) Pflicht.
-Trage deine echten Angaben ein — im Zweifel rechtlich prüfen lassen. *(Dies ist keine
-Rechtsberatung.)*
+### 2. Rechtstexte (Deutschland) — ausgefüllt (Entwurf)
+`impressum.html` und `datenschutz.html` enthalten echte Angaben (Mathis Purrotat, Jena).
+Es bleibt ein Entwurf nach bestem Wissen — keine Rechtsberatung; bei Bedarf prüfen lassen.
+Sobald eine c/o-/Geschäftsadresse vorliegt, kann die Privatadresse dort ersetzt werden.
 
 ### 3. Preis-/Konto-Aussagen prüfen
 Im Abschnitt „Sicherheit" und in der FAQ stehen Aussagen zum kostenlosen Konto und

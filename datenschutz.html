@@ -13,7 +13,7 @@
     .legal h2 { font-size: 20px; margin: 36px 0 12px; }
     .legal p, .legal li { color: var(--cp-fg-secondary); margin-bottom: 12px; }
     .legal ul { padding-left: 22px; }
-    .legal .todo { background: var(--cp-risk-med-bg); border: 1px solid var(--cp-border); border-radius: var(--cp-radius-md); padding: 16px 18px; color: var(--cp-fg); font-size: 14px; margin-bottom: 28px; }
+    .legal .note { background: var(--cp-bg-sunken); border: 1px solid var(--cp-border); border-radius: var(--cp-radius-md); padding: 16px 18px; color: var(--cp-fg-secondary); font-size: 13.5px; margin-bottom: 28px; }
     .legal a.back { font-size: 14px; }
   </style>
 </head>
@@ -22,20 +22,24 @@
     <a class="back" href="index.html">← Zurück zur Startseite</a>
     <h1>Datenschutzerklärung</h1>
 
-    <p class="todo"><strong>Platzhalter / Entwurf.</strong> Diese Seite skizziert, wie
-    ClickPilot mit Daten umgeht, ist aber rechtlich nicht final. Für eine öffentliche
-    Seite ist eine DSGVO-konforme Datenschutzerklärung Pflicht. Passe die Angaben an
-    und lasse sie im Zweifel prüfen. Dies ist keine Rechtsberatung.</p>
+    <p class="note">Hinweis: Diese Datenschutzerklärung beschreibt den Datenumgang nach
+    bestem Wissen. Sie ersetzt keine Rechtsberatung; bei rechtlicher Unsicherheit empfiehlt
+    sich eine Prüfung.</p>
 
     <h2>1. Verantwortlicher</h2>
-    <p>[Name und Kontaktdaten — siehe <a href="impressum.html">Impressum</a>.]</p>
+    <p>
+      Mathis Purrotat<br />
+      Magdelstieg 73, 07745 Jena, Deutschland<br />
+      E-Mail: <a href="mailto:matpurrota@icloud.com">matpurrota@icloud.com</a><br />
+      (siehe auch <a href="impressum.html">Impressum</a>)
+    </p>
 
     <h2>2. Die Website (diese Seite)</h2>
-    <p>Diese Landingpage wird über GitHub Pages bereitgestellt. Beim Aufruf können durch
-    den Hosting-Anbieter (GitHub) technisch notwendige Server-Logs (z.&nbsp;B. IP-Adresse,
-    Zeitpunkt, abgerufene Datei) verarbeitet werden. Schriftarten werden <strong>lokal von
-    dieser Seite ausgeliefert</strong> — es wird keine Verbindung zu externen
-    Schriftdiensten (etwa Google Fonts) aufgebaut.</p>
+    <p>Diese Landingpage wird über GitHub Pages (GitHub, Inc., USA) bereitgestellt. Beim
+    Aufruf können durch den Hosting-Anbieter technisch notwendige Server-Logs
+    (z.&nbsp;B. IP-Adresse, Zeitpunkt, abgerufene Datei) verarbeitet werden. Schriftarten
+    werden <strong>lokal von dieser Seite ausgeliefert</strong> — es wird keine Verbindung
+    zu externen Schriftdiensten (etwa Google Fonts) aufgebaut.</p>
     <p>Der Download-Button ruft beim Laden die GitHub-API auf, um die aktuelle Version und
     den Installer-Link zu ermitteln. Dabei wird eine Verbindung zu GitHub hergestellt.</p>
 
@@ -47,11 +51,11 @@
       werden maskiert, bevor sie das Gerät verlassen.</li>
       <li><strong>KI-Anfragen über das Konto:</strong> Bei Nutzung eines kostenlosen
       Kontos werden die Anfragen über einen Vermittlungsdienst an den KI-Anbieter
-      weitergeleitet. Gesprächsinhalte werden dabei <strong>nicht gespeichert</strong>;
-      erfasst werden lediglich Verbrauchsdaten (Konto-Kennung, Token-Zähler, Zeitstempel)
-      zur Kontingent-Verwaltung.</li>
-      <li><strong>Eigener KI-Schlüssel (BYOK):</strong> Wird ein eigener Schlüssel
-      hinterlegt, gehen die Anfragen direkt an den KI-Anbieter; es gilt dessen
+      (Anthropic, siehe Abschnitt&nbsp;5) weitergeleitet. Gesprächsinhalte werden dabei
+      <strong>nicht gespeichert</strong>; erfasst werden lediglich Verbrauchsdaten
+      (Konto-Kennung, Token-Zähler, Zeitstempel) zur Kontingent-Verwaltung.</li>
+      <li><strong>Eigener KI-Schlüssel (BYOK):</strong> Wird ein eigener Anthropic-Schlüssel
+      hinterlegt, gehen die Anfragen direkt an Anthropic; es gilt dessen
       Datenschutzerklärung.</li>
       <li><strong>Lokales Protokoll:</strong> Ausgeführte Aktionen werden lokal auf
       deinem Gerät protokolliert und verlassen es nicht.</li>
@@ -59,11 +63,14 @@
 
     <h2>4. Deine Rechte</h2>
     <p>Du hast nach DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung,
-    Einschränkung der Verarbeitung sowie Datenübertragbarkeit. [Kontakt für die
-    Ausübung dieser Rechte ergänzen.]</p>
+    Einschränkung der Verarbeitung sowie Datenübertragbarkeit. Zur Ausübung genügt eine
+    Nachricht an <a href="mailto:matpurrota@icloud.com">matpurrota@icloud.com</a>.
+    Außerdem besteht ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde.</p>
 
     <h2>5. KI-Anbieter</h2>
-    <p>[Anbieter benennen und auf dessen Datenschutzhinweise verlinken.]</p>
+    <p>Die KI-Funktionen basieren auf der API von <strong>Anthropic, PBC</strong> (USA).
+    Für die dortige Verarbeitung gelten Anthropics Datenschutzhinweise:
+    <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">anthropic.com/legal/privacy</a>.</p>
   </div>
 </body>
 </html>
