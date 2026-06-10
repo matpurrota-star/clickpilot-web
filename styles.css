@@ -339,7 +339,7 @@ section { padding: 88px 0; }
 @media (max-width: 760px) { .perms { grid-template-columns: 1fr; } }
 
 /* ── Screenshots gallery ───────────────────────────────────────────────── */
-.shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.shots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: start; }
 .shot {
   border-radius: var(--cp-radius-xl); overflow: hidden;
   border: 1px solid var(--cp-border); box-shadow: var(--cp-shadow-md);
