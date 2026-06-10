@@ -346,7 +346,16 @@ section { padding: 88px 0; }
   background: var(--cp-bg-elevated);
 }
 .shot .cap { padding: 14px 18px; font-size: 14px; color: var(--cp-fg-secondary); border-top: 1px solid var(--cp-border-subtle); }
-@media (max-width: 760px) { .shots { grid-template-columns: 1fr; } }
+/* Gleiche Höhe je Reihe: beiden Bildern einer Reihe dasselbe Seitenverhältnis
+   geben, minimaler Cover-Crop gleicht die ~1–3 % Abweichung aus. */
+.shots .shot:nth-child(1) img,
+.shots .shot:nth-child(2) img { aspect-ratio: 1.123; object-fit: cover; }
+.shots .shot:nth-child(3) img,
+.shots .shot:nth-child(4) img { aspect-ratio: 1.503; object-fit: cover; }
+@media (max-width: 760px) {
+  .shots { grid-template-columns: 1fr; }
+  .shots .shot img { aspect-ratio: auto; }  /* einspaltig: natürliche Höhe, kein Crop */
+}
 
 /* ── Install steps ─────────────────────────────────────────────────────── */
 .install-steps { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 18px; }
